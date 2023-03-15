@@ -1,0 +1,455 @@
+
+/* Carga de fuentes  - Gloock 
+                     - Roboto 
+                     - Labrada 
+                     - Montserrat
+                     */
+                    
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Labrada:wght@100&family=Montserrat:wght@100&family=Roboto:wght@100&display=swap');
+*{
+    font-family: "Roboto"; /*Configuración de la letra base de toda al web*/
+    margin: 0;
+    padding: 0;
+ }
+
+ 
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* Seccion inicio */
+              
+.inicio{
+      background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+      url("imagenes/fondoinicio.jpg");
+      background-size: cover;
+      background-position: center center;
+      color: #fff;
+}
+
+.inicio .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.inicio .contenido-seccion header{
+
+    padding: 30px;
+}
+
+/* Menu lateral */
+
+.inicio .contenido-seccion header nav{
+    position: fixed;
+    margin-left: 60px;
+    background-color: #000000;
+    padding: 15px;
+    border-radius: 10%;
+    text-align: left;
+    z-index: 99;
+    display: none;
+}
+
+.inicio .contenido-seccion header nav a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/*Logo "GS" */
+
+.inicio .contenido-seccion  header .logo{
+    font-weight: bold;
+    font-family: "Montserrat";
+    font-size: 3em;
+    /*Destello para el logo */
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF5A5F, 0 0 70px #FF5A5F, 0 0 80px #FF5A5F, 0 0 100px #FF5A5F;
+}
+ .inicio .contenido-seccion header .nav-bar{
+    position: fixed;
+    background-color: #000000;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    cursor: pointer;
+    transition: .3s;
+ }
+/* Generar sombra cuando el cursor se apoya encima "hover" */
+ .inicio .contenido-seccion header .nav-bar:hover{
+    box-shadow: 0 0 35px #fff;
+}
+
+.inicio .contenido-seccion .info{
+    padding-bottom: 130px;
+}
+
+.inicio .contenido-seccion .info h1{
+    font-size: 4rem;
+    letter-spacing: 5px;
+    font-family: "Labrada";
+}
+
+.inicio .contenido-seccion .info h2{
+    font-weight: normal;
+    font-size: 23px;
+    margin-top: -10px;
+    letter-spacing: 2px;
+}
+
+.inicio .contenido-seccion .info .redes {
+    margin: 20px 0px;
+}
+
+
+/* Configuracion de los logos de Redes sociales*/
+
+.inicio .contenido-seccion .info .redes a{
+    font-size: 25px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #000;
+    color: #97c3cc;
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 5px;
+    transition: .3s;
+}
+
+.inicio .contenido-seccion .info .redes a:hover{
+
+    color: #fff #000;
+    background-color: #97c3cc;
+    box-shadow: 0 0 20px #fff;
+}
+
+/*Configuración de la foto del cv*/
+
+.inicio .contenido-seccion .foto{
+    position: relative;
+}
+
+.inicio .contenido-seccion .foto img{
+    max-width: 200px;
+    border-radius: 50%;
+    border: 5px solid #000;
+    position: absolute;
+    left: 50%;
+    top: -100px;
+    transform: translateX(-50%)
+}
+/* Estilos generales*/
+
+.titulo-seccion {
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+}
+
+.titulo-detalle{
+    font-family: "Labrada";
+    font-size: 1.2rem;
+}
+
+
+/* Seccion Perfil*/
+
+.perfil {
+    background-color: #97c3cc;
+    padding: 130px 0 200px 0;
+    text-align: center;
+}
+
+
+.perfil .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+
+}
+
+.perfil .contenido-seccion h2{
+    text-transform: uppercase;
+    font-size: 30px;
+
+
+}
+
+.descripcion-perfil{
+    background-color: #97c3cc;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.perfil .contenido-seccion .fila{
+    display:flex;
+    margin-top: 30px;
+    justify-content: space-around
+}
+
+.perfil .contenido-seccion .fila .col{
+    width: 30%;
+}
+
+.perfil .contenido-seccion .fila .col i{
+    color: #6900ae;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #6900ae;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.perfil .contenido-seccion .fila .col span{
+    display: block;
+    font-weight: bold;
+    margin: 8px;
+}
+
+/** Seccion Habilidades */
+
+.habilidades{
+    padding: 80px 0 100px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url("imagenes/habilidades.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    color: #fff
+}
+
+.habilidades .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px
+}
+
+
+.habilidades .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+
+}
+.habilidades .contenido-seccion .fila{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.habilidades .contenido-seccion .fila .col{
+    width: 40%;
+    text-align: left;
+}
+
+.habilidades .contenido-seccion .fila .col .cont-barra{
+    display: flex;
+    align-items: center;
+}
+
+.habilidades .contenido-seccion .barra{  /*Configuración de las barras de habilidades*/
+    display: flex;
+    border: 1px solid #6900ae;
+    padding: 2px;
+    border-radius: 3px;
+    margin-right: 3%;
+}
+
+.habilidades .contenido-seccion .barra .e{ /*Configuración de las barras de habilidades*/
+    background-color: #4700ae;
+    width: 20px;
+    height: 30px;
+    margin-right: 2px;
+}
+
+/* Seccion Resumen*/
+ 
+.resumen{
+    background-color: #97c3cc;
+    padding: 4% 0;
+    text-align: center;
+}
+
+.titulo-seccion2{
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+}
+
+
+.resumen .subtitulo{
+    text-transform: uppercase;
+    font-size: 30px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px
+}
+
+.titulos-resumen{  /*Configuración de los títulos del resumen, recuadros de color al rededor */
+    font-size: 1.4rem;
+    display: inline-block;
+    color: #6900ae;
+    font-weight: bold;
+    border: 2px solid #6900ae;
+    padding: 10px;
+    margin: 2em 0;
+}
+
+.titulo-ano{
+    font-family: "Montserrat";
+    font-size: 1.4rem;
+    font-style: italic;
+    text-shadow: 0.5px 0.5px #000, -0.5px -0.5px #000, 0.5px -0.5px #000, -0.5px 0.5px #000;
+    margin-bottom: 1em;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.trabajo{
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-bottom: 2em;
+  }
+  
+.trabajo:after{
+    content: '';
+    display: block;
+    margin-top: 0.5em;
+    border-bottom: 1px solid black;
+}
+
+.ano{
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.titulo-trabajo{
+    font-family: "Montserrat";
+    font-size: 1.4rem;
+    font-style: italic;
+    text-shadow: 0.5px 0.5px #000, -0.5px -0.5px #000, 0.5px -0.5px #000, -0.5px 0.5px #000;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0px;
+    margin-top: 1rem;
+}
+
+.listas-trabajo {
+    font-size: 1.2rem;
+    display: inline-block;
+    list-style: none;
+}
+.listas-trabajo:after{
+    content: '';
+    display: block;
+    margin-top: 0.5em;
+    border-bottom: 1px solid black;
+}
+
+/* Seccion Contacto */
+
+.contacto{
+    background-color: #2c2c2c;
+    padding: 140px 0 100 0;
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+
+.contacto .titulo-contacto{
+
+    padding-top: 1rem;
+    padding-bottom: 0.2rem;
+
+}
+
+.contacto .contenido-contacto{
+
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.contacto .contenido-contacto h3{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+.contacto .contenido-contacto .fila{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacto .contenido-contacto .fila .col h2{
+    color: #97c3cc;
+    font-size: 1rem;
+}
+
+/* Hacer responsive la web */
+
+@media screen and (max-width:800px) {
+
+    .descripcion-perfil{
+        font-size: 1rem;
+    }
+
+    .perfil .contenido-seccion .fila .col{
+        font-size: 0.8rem;
+    }
+
+    .habilidades{
+        max-width: 100%;
+    }
+
+    .habilidades .contenido-seccion h3{
+        font-size: 1.4rem;
+    }
+
+
+
+    .habilidades .contenido-seccion .fila{
+        display: block;
+    }
+
+    .habilidades .contenido-seccion .fila .col{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .habilidades .contenido-seccion .fila .col .cont-barra{
+        justify-content: left;
+        padding-left: 5px;
+    }
+
+    .habilidades .contenido-seccion .barra .e{
+        width: 4vw;
+        height: 7vw;
+    }
+
+    .habilidades .contenido-seccion .barra{
+        margin-bottom: 10px;
+    }
+
+    .resumen{
+    max-width: 100%;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-size-adjust: 0.5rem;
+    }
+
+
+}
